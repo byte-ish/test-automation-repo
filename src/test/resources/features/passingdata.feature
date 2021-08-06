@@ -1,4 +1,4 @@
-@learn
+@learnMore
 Feature: Explore in how many ways can we pass data
   Scenario: Verify passing data using data table
     Given some data details

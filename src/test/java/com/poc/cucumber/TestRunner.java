@@ -5,8 +5,11 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty", "html:target/cucumber"},
+@CucumberOptions(plugin = {"pretty", "html:target/cucumber.html", "json:target/cucumber.json"},
         features = {"src/test/resources/features"},
-        glue = {"com.poc.cucumber.stepdefinition"})
+        glue = {"com.poc.cucumber.stepdefinition"},
+        tags = "(@learn or @learnMore) and not @sanity",
+        stepNotifications = true,
+        dryRun = false)
 public class TestRunner {
 }
