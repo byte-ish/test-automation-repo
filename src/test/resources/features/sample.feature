@@ -12,5 +12,3 @@ Feature: This is a sample feature
       | name | age |
       | Ish  | 29  |
       | Jack | 29  |
-
-    
